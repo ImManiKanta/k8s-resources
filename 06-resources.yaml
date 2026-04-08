@@ -10,8 +10,8 @@ spec:
      #soft limit
       requests:
         memory: "1mi" #RAM
-        cpu: "1m" #CPU  
+        cpu: "1" #CPU  
       # hard limit, how much it can go upto
       limits:
         memory: "1mi" #RAM
-        cpu: "1m" #CPU  
+        cpu: "1" #CPU  
