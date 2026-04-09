@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx
+  annotations:
+    kubernetes.io/change-cause: "moving to nginx:1.29"
   # these labels are replicaset labels
   labels:
     project: roboshop
@@ -25,4 +27,4 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx
+        image: nginx:1.29
