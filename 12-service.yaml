@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: nginx
 spec:
+  # labels are used as selectors
   selector:
     project: roboshop
     environment: dev
@@ -10,4 +11,4 @@ spec:
   ports:
   - protocol: TCP
     port: 80 #service port
-    targetport: 80  #target port nginx
+    targetPort: 80  #target port nginx
